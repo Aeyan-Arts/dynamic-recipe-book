@@ -9,37 +9,19 @@
 <body>
     <nav>
     <ul>
-        <li class="nav"><a href=index.html></a>home</li>
-        <li class="nav"> <a href=about.html></a>about us</li>
+        <li><a href=index.html class="nav">home</a></li>
+        <li class="nav"> <a href=about.html class="nav">about us</a></li>
 
     </ul>
     </nav>
     <form>
         <label for="search">search</label>
         <input type="search"name="search">
-        <div class="popup-overlay" id="popupOverlay">
-
-            <div class="popup" id="popup">
-        
-                <span class="close" id="closePopup">&times;</span>
-        
-                <div class="popup-content">
-        
-                    <p>Welcome to our website!</p>
-        
-                    <p>Sign up to receive exclusive offers:</p>
-        
-                    <textarea name="recipie" id="recipie" placeholder="enter a recipie"></textarea>
-        
-                    <button onclick="submitForm()">submit</button>
-        
-                </div>
-        
-            </div>
-        
-        </div>
-<button type="submit" class="add">add a recipe </button>
+        <label for="dt">enter the recipe</label>
+        <textarea name="dt" id="dt"></textarea>
+<button type="submit" class="add" onclick="popup(event)">add a recipe </button>
     </form>
+    <div id="recipes"></div>
     <script src="script.js"></script>
 </body>
 </html>
